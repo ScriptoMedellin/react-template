@@ -11,7 +11,10 @@ import { privateRoutes, publicRoutes } from './config/routes';
 import './styles';
 import './styles/custom.scss';
 
+// App contains private and public routes
 const router = (auth.currentUser !== null ) ? createBrowserRouter(privateRoutes) : createBrowserRouter(publicRoutes);
+// App contains only public routes
+// const router = createBrowserRouter(publicRoutes);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,4 +25,5 @@ root.render(
   </React.StrictMode>
 );
 
+// Remove the following line, if you don't want to share WebVitals with Google Analytics
 reportWebVitals();
