@@ -1,5 +1,5 @@
-# Template
-## with react, bootstrap, redux and firebase with SEO
+## React-Template
+This is an empty React App template with bootstrap, redux and firebase with SEO
 
 Change the firebase Settings in the file src/config/firebase.js
 
